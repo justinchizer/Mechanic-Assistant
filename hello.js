@@ -1,9 +1,9 @@
 var builder = require('botbuilder');
-
 var restify = require('restify');
+var dotenv = require('dotenv');
 
 var connector = new builder.ChatConnector({
-    appID: process.env.MICROSOFT_APP_ID,
+    appID: process.env.MICROSOFT_APP_IP,
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
